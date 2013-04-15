@@ -1,0 +1,13 @@
+import java.util.*;
+public class Chest {
+	
+	private int keyToOpen;
+	private List<Integer> keysInside;
+	
+	public Chest(int key, List<Integer> keysInside)
+	{
+		
+	}
+	
+	
+}

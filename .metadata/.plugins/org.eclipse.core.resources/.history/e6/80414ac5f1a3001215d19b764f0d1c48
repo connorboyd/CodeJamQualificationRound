@@ -1,0 +1,104 @@
+
+public class Game {
+	
+	private char[][] gameBoard = new char[4][4];
+	private int caseNumber;
+	private int gameState;	//0 = unknown
+							//1 = X won
+							//2 = Y won
+							//3 = Draw
+							//4 = unfinished
+	public Game(String gameString, int caseNum)
+	{
+		for(int i = 0; i < 16; ++i)
+		{
+			gameBoard[i / 4][i % 4] = gameString.charAt(i);
+		}
+		caseNumber = caseNum;
+		gameState = 0;
+	}
+	
+	public void checkGame()
+	{
+		int numEmpty = 0;
+		for(int i = 0; i < 16; ++i)
+		{
+			if(gameBoard[i / 4][i % 4] == '.')
+				++numEmpty;
+		}
+		
+		if(checkRows() || checkCols())
+		{
+			printResults();
+		}
+	}
+	
+	private void printResults()
+	{
+		
+	}
+	
+	public boolean checkRows()
+	{
+		for(int row = 0; row < 4; ++row)
+		{	
+			int numXs = 0;
+			int numYs = 0;
+			for(int col = 0; col < 4; ++col)
+			{
+				if(gameBoard[row][col] == 'X')
+					++numXs;
+				else if(gameBoard[row][col] == 'Y')
+					++numYs;
+				else if(gameBoard[row][col] == 'T')
+				{
+					++numXs; ++numYs;
+				}	
+			}
+			
+			if(numXs == 4)
+			{
+				gameState = 1;
+				return true;
+			}
+			else if(numYs == 4)
+			{
+				gameState = 2;
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public boolean checkCols()
+	{
+		for(int col = 0; col < 4; ++col)
+		{	
+			int numXs = 0;
+			int numYs = 0;
+			for(int row = 0; row < 4; ++row)
+			{
+				if(gameBoard[col][row] == 'X')
+					++numXs;
+				else if(gameBoard[col][row] == 'Y')
+					++numYs;
+				else if(gameBoard[col][row] == 'T')
+				{
+					++numXs; ++numYs;
+				}	
+			}
+			
+			if(numXs == 4)
+			{
+				gameState = 1;
+				return true;
+			}
+			else if(numYs == 4)
+			{
+				gameState = 2;
+				return true;
+			}
+		}
+		return false;
+	}
+}

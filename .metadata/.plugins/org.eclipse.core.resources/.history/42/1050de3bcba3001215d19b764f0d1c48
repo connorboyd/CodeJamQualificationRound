@@ -1,0 +1,10 @@
+import scala.io._
+
+object TicTacTomekSolver {
+  
+  def readInput = {
+    var fileName = "file.in"
+    val s = Source.fromFile(fileName)
+  }
+
+}

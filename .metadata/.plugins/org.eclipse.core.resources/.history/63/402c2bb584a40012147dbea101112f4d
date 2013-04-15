@@ -1,0 +1,11 @@
+
+public class Game {
+	
+	private int numKeys, numChests;
+	
+	public Game(int keys, int chests)
+	{
+		
+	}
+	
+}

@@ -1,0 +1,42 @@
+
+public class Lawn {
+	
+	
+	private int rows, cols;
+	private int[][] lawnMatrix;
+	public Lawn(int r, int c, int[][] lm)
+	{
+		rows = r;
+		cols = c;
+		lawnMatrix = lm;
+	}
+	
+	private boolean isHigherInEveryDirection(int r, int c)
+	{
+		
+		
+		return false;
+	}
+	
+	private boolean isHigherNorth(int r, int c)
+	{
+		return false;
+	}
+	
+	private boolean isHigherSouth(int r, int c)
+	{
+		return false;
+	}
+	
+	private boolean isHigherEast(int r, int c)
+	{
+		return false;
+	}
+	
+	private boolean isHigherWest(int r, int c)
+	{
+		return false;
+	}
+	
+
+}

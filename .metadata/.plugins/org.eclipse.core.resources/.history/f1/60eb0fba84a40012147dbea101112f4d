@@ -1,0 +1,12 @@
+
+public class Game {
+	
+	private int numKeys, numChests;
+	private List<Integer> myKeys;
+	
+	public Game(int keys, int chests)
+	{
+		
+	}
+	
+}

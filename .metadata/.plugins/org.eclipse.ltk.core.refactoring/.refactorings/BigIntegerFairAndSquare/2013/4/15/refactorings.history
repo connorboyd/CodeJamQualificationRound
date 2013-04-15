@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;BigIntegerIntervalThread.java&apos; to &apos;BigIntegerInterval.java&apos;&#x0A;- Original project: &apos;BigIntegerFairAndSquare&apos;&#x0A;- Original element: &apos;BigIntegerIntervalThread.java&apos;&#x0A;- Renamed element: &apos;BigIntegerInterval.java&apos;" description="Rename compilation unit &apos;BigIntegerIntervalThread.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{BigIntegerIntervalThread.java" name="BigIntegerInterval.java" references="false" stamp="1365841440217" version="1.0"/>
+</session>

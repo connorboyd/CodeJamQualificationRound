@@ -1,0 +1,17 @@
+
+public class Main {
+
+	
+	private static String inputFile = "input.txt";
+	private static String outputFile = "output.txt";
+	
+	public static void main(String[] args)
+	{
+		
+	}
+
+	private static void getShitFromFile()
+	{
+		
+	}
+}

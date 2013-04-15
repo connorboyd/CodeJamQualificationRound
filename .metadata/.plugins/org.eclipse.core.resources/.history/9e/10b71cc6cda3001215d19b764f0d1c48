@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class Solver {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args)
+	{
+		String fileName = "file.in";
+		Scanner myScanner = new Scanner(new FileReader(fileName));
+	}
+
+}

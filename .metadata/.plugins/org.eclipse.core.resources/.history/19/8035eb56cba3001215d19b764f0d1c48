@@ -1,0 +1,18 @@
+import scala.io._
+
+object TicTacTomekSolver {
+  
+  def main = {
+    readInput
+  }
+  
+  def readInput = {
+    var fileName = "file.in"
+    val s = Source.fromFile(fileName)
+    s.getLines.foreach((line) => {
+      println(line)
+    })
+    
+  }
+
+}
