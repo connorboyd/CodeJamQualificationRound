@@ -11,11 +11,16 @@ public class Main {
 	
 	public static void main(String[] args) throws IOException
 	{
+		long time1 = System.currentTimeMillis();
+		
 		getShitFromFile();
-		System.out.println("Sample size = " + sampleSize);
-		System.out.println("Size = " + intervals.size());
+//		System.out.println("Sample size = " + sampleSize);
+//		System.out.println("Size = " + intervals.size());
 		printShitToFile();
+		long time2 = System.currentTimeMillis();
 		System.out.println("Done!");
+		double elapsed = ((double)(time2 - time1)) / 1000.0d;
+		System.out.println(elapsed + " seconds");
 		
 	}
 	

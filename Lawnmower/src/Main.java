@@ -11,7 +11,14 @@ public class Main {
 	
 	public static void main(String[] args) throws IOException
 	{
-		getShitFromFile();
+		for(int i = 0; i < 20; ++i)
+		{
+			long time1 = System.currentTimeMillis();
+			getShitFromFile();
+			long time2 = System.currentTimeMillis();
+			System.out.println(  (double)(time2 - time1) / 1000.0d + " Seconds" );
+		}
+
 	}
 
 	private static void getShitFromFile() throws IOException
@@ -33,19 +40,23 @@ public class Main {
 			}
 			lawnList.add(new Lawn(rows, cols, lawnMatrix));
 		}
+		myScanner.close();
 		
+		FileWriter myFW = new FileWriter(outputFile);
 		for(int i = 0; i < sampleSize; ++i)
 		{
-			System.out.print("Case #" + (i + 1) + ": ");
+			myFW.write("Case #" + (i + 1) + ": ");
 			if( lawnList.get(i).isPossible() )
 			{
-				System.out.println("YES");
+				myFW.write("YES\n");
 			}
 			else
 			{
-				System.out.println("NO");
+				myFW.write("NO\n");
 			}
 		}
+		
+		myFW.close();
 		
 	}
 }

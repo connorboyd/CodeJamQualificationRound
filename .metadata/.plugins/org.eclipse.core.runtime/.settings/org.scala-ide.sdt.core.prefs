@@ -2,5 +2,5 @@ deprecation=true
 eclipse.preferences.version=1
 explaintypes=true
 optimise=true
-org.scala-ide.sdt.core.diagnostic.currentPluginVersion=2.1.0.m3-2_10-201301031824-79b3311
+org.scala-ide.sdt.core.diagnostic.currentPluginVersion=3.0.0.rc3-2_10-201303131303-1e64c72
 target=jvm-1.7
